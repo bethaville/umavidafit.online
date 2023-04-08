@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programa de emagrecimento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+<link rel="preload" href="https://player-vz-72133bd5-11f.tv.pandavideo.com.br/embed/css/styles.css" as="style">
+<link rel="prerender" href="https://player-vz-72133bd5-11f.tv.pandavideo.com.br/embed/?v=5351446c-79b9-4b44-adc3-3b17ee306886">
+<link rel="preload" href="https://player-vz-72133bd5-11f.tv.pandavideo.com.br/embed/js/hls.js" as="script">
+<link rel="preload" href="https://player-vz-72133bd5-11f.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js" as="script">
+<link rel="preload" href="https://config.tv.pandavideo.com.br/vz-72133bd5-11f/5351446c-79b9-4b44-adc3-3b17ee306886.json" as="fetch">
+<link rel="preload" href="https://config.tv.pandavideo.com.br/vz-72133bd5-11f/config.json" as="fetch">
+<link rel="preload" href="https://b-vz-72133bd5-11f.tv.pandavideo.com.br/5351446c-79b9-4b44-adc3-3b17ee306886/playlist.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://b-vz-72133bd5-11f.tv.pandavideo.com.br">
+<link rel="dns-prefetch" href="https://player-vz-72133bd5-11f.tv.pandavideo.com.br">
+<link rel="dns-prefetch" href="https://vz-72133bd5-11f.b-cdn.net">
+<link rel="prerender" href="https://pay.hotmart.com/V79549513H?checkoutMode=10&bid=1681004967679"/>
+
+
+  </head>
+
+  <style>
+          body {
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: #ff8f00;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  font: 500 16px Montserrat, sans-serif;
+}
+
+.section {
+  background-color: #61ce70;
+  padding: 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px auto 10px;
+}
+
+.section1 {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section1 h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  color: #61ce70;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 300px;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0px 15px 60px 5px;
+}
+
+.card h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #61ce70;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.coments {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #61ce70;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.card p {
+  font: 300 16px Montserrat, sans-serif;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.content {
+  text-align: center;
+  font: 400 32px Montserrat, sans-serif;
+  max-width: 1000px;
+  margin: 20px auto 40px;
+}
+
+.content span {
+  color: #000;
+  background-color: #ff8f00;
+  border-radius: 4px;
+  padding: 1px;
+  font-weight: 800;
+}
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #61ce70;
+  color: #fff;
+  font: 900 18px Montserrat, sans-serif;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  margin: 40px auto 60px;
+  width: 720px;
+  display: block;
+}
+
+
+    .accordion {
+      background-color: #eee;
+      border-radius: 5px;
+      margin: 10px;
+      overflow: hidden;
+    }
+
+    .accordion__title {
+      font: 600 16px Montserrat, sans-serif;
+      color: #ffff;
+      background-color: #61ce70;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.2s ease-out;
+    }
+
+    .accordion__title:hover {
+      background-color: #57a862;
+    }
+
+    .accordion__content {
+      padding: 18px;
+      display: none;
+      background-color: white;
+    }
+
+    .accordion__content p {
+      font: 400 16px Montserrat, sans-serif;
+      color: #7a7a7a;
+      margin: 0;
+    }
+
+    .accordion__content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .accordion__content.show {
+      display: block;
+    }
+
+.main-container {
+background-color: #61ce70;
+margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.container1 {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.left-side {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 50%;
+text-align: left;
+}
+
+.right-side {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+}
+
+.left-side h2 {
+font-family: 'Bebas Neue', sans-serif;
+color: #fff;
+font-size: 45px;
+font-weight: 600;
+margin-bottom: 16px;
+text-align: left;
+}
+
+.left-side p {
+font: 400 16px Montserrat, sans-serif;
+color: #fff;
+margin-bottom: 24px;
+}
+
+.left-side button {
+background-color: #fff;
+color: #61ce70;
+border: none;
+border-radius: 4px;
+padding: 12px 24px;
+font-size: 16px;
+font-weight: bold;
+align-self: flex-start;
+}
+
+.right-side img {
+max-width: 70%;
+align-items: center;
+height: auto;
+}
+
+.left-side-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+text-align: left;
+}
+
+
+@font-face{
+    font-family:"Font Awesome 5 Free";
+    font-style:normal;
+    font-weight:400;
+    font-display:auto;
+}
+.far{
+    font-family:"Font Awesome 5 Free";
+    font-weight:400
+}
+
+
+#comentarios_face {
+max-width: 1000px;
+margin-top: 30px;
+margin-bottom: 60px;
+margin-left: auto;
+margin-right: auto;
+font-family: Arial;
+background-color: #F6F7F9;
+font-size: 14px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_comentario { 
+    border-bottom: 1px solid #E9EBEE;
+    display: block;
+    padding-bottom: 6px;
+}
+.perfil {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.perfil .nome {
+    color: #365899;
+    font-weight: bold;
+}
+.nome img {
+    float: left;
+    padding-right: 10px;
+}
+.perfil img {
+    width: 60px !important;
+    height: 50px;
+}
+.perfil p {
+    margin: 0;
+    margin-left: 60px;
+    margin-bottom: 0px;
+}
+.infos {
+    font-size: 11px;
+    color: #90949c;
+}
+.perfil2 {
+    padding-left: 9px;
+    border-left: 1px solid #E9EBEE;
+    margin-left: 50px;
+    padding-bottom: 0;
+}
+
+
+.rodape {
+  color: #fff;
+  text-align: center;
+  padding: 60px;
+}
+
+.rodape h3 {
+  font: 600 14px Montserrat, sans-serif;
+  color: #ff8f00;
+  margin-bottom: 20px;
+}
+
+.rodape p {
+font: 400 12px Montserrat, sans-serif;
+color: #ccc;
+  line-height: 1.5;
+}
+
+.ocultar{display:none;}
+
+  </style>
+
+  <body>
+    <div class="container">
+      <p>Usted y algunas personas cercanas a han sido seleccionados para participar en este programa.</p>
+    </div>
+    <div class="content">
+      <p>Descubre el <span>SECRETO</span> que potencia el poder adelgazante y activa la hormona responsable de quemar la grasa corporal, ¡con <span>10X MENOS ESFUERZO!</span></p>
+    </div>
+    <div class="video-container">
+      <iframe id="panda-5351446c-79b9-4b44-adc3-3b17ee306886" src="https://player-vz-72133bd5-11f.tv.pandavideo.com.br/embed/?v=5351446c-79b9-4b44-adc3-3b17ee306886" style="border:none;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="720" height="360" fetchpriority="high"></iframe>
+    </div>
+    <button class="button ocultar" onclick="window.location.href='https://pay.hotmart.com/V79549513H?checkoutMode=10&bid=1681004967679'">QUIERO ASEGURAR MI LUGAR</button>
+    
+    <div class="section ocultar">
+  <h2 class="section-title">QUE VAS A RECIBIR</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3 class="box-title">¡EMPEZAR HOY!</h3>
+      <p class="box-text">Recibirá el método directamente en su correo electrónico después de que se confirme su pago. Al pagar con tarjeta de crédito, se le liberará el acceso al método al instante; si pagó con recibo bancario, la liberación puede demorar hasta 2 días.</p>
+    </div>
+    <div class="card">
+      <h3 class="box-title">MÉTODO COMPLETO</h3>
+      <p class="box-text">Recibirás todo el contenido de forma completa y detallada para aprovechar la oportunidad de cambiar tu vida y desbloquear la pérdida de peso, ¡verás los pasos que debes seguir para empezar a perder peso de forma saludable cada semana!</p>
+    </div>
+    <div class="card">
+      <h3 class="box-title">SOPORTE PERSONALIZADO</h3>
+      <p class="box-text">Quédese tranquilo, después de su compra, seguirá contando con el apoyo de nuestro equipo especializado disponible para ayudarle en todo lo que necesite, ya sea con el producto, con el acceso, o con todas y cada una de las dudas que puedan surgir sobre nuestro producto.</p>
+    </div>
+  </div>
+</div>
+
+<h1 class="coments">mira lo que están diciendo</h1>
+
+
+<div class="elementor-widget-container">
+	<div id="comentarios_face"> <span class="titulo_comentario">34 comentários</span>
+      <!-- NÃO MEXA AQUI EM CIMA-->
+
+
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+        <noscript>
+          <img src="https://i.imgur.com/Dhk2G1G.jpg">
+        </noscript>
+        <img class=" ls-is-cached lazyloaded" src="https://i.imgur.com/Dhk2G1G.jpg" data-src="https://i.imgur.com/Dhk2G1G.jpg">Luciana Santos</span>
+			<p>Estoy sorprendido, ¡realmente funcionó y obtuve mis primeros resultados! Ya bajé de peso en 2 semanas, muy aprobado!!!</p> <span class="infos">Responder · Curtir · Seguir · 1h </span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+    
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+        <noscript>
+          <img src="https://i.imgur.com/M5zZNMv.jpg">
+        </noscript>
+        <img class=" lazyloaded" src="https://i.imgur.com/M5zZNMv.jpg" data-src="https://i.imgur.com/M5zZNMv.jpg">
+        Larisa Fernández</span>
+			<p>¡ME ENCANTA! Lo compré y comencé a seguir todo correctamente, y ahora ya me estoy beneficiando y teniendo buenos resultados con el entrenamiento.</p> <span class="infos">Responder · Curtir · Seguir · 1h </span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+    
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+        <noscript>
+          <img src="https://i.imgur.com/eM9uJvs.jpg">
+        </noscript>
+        <img class=" lazyloaded" src="https://i.imgur.com/eM9uJvs.jpg" data-src="https://i.imgur.com/eM9uJvs.jpg">
+        rosana melo</span>
+			<p>¡Estoy cara a cara con esta guía! Pensé que sería uno de esos que solo prometen, pero por primera vez encontré algo que realmente me ayudó y eso no fue solo una estafa, ¡ya bajé de peso y me siento mucho mejor en tres semanas de estudio!</p> <span class="infos">Responder · Curtir · Seguir · 1h </span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+    
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+        <noscript>
+          <img src="https://i.imgur.com/r1Nzi42.jpg">
+        </noscript>
+        <img class=" lazyloaded" src="https://i.imgur.com/r1Nzi42.jpg" data-src="https://i.imgur.com/r1Nzi42.jpg">
+        María Carolina</span>
+			<p>No me sentía muy seguro, ¿realmente funcionará?</p> <span class="infos">Responder · Curtir · Seguir · 3h </span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+
+      <!-- INICIO DO COMENTARIO || ESSE COMENTÁRIO EH UMA RESPOSTA -->
+		<div class="perfil perfil2"> <span class="nome">
+            <noscript>
+              <img src="https://i.imgur.com/GC6b6qe.jpg">
+            </noscript>
+            <img class=" lazyloaded" src="https://i.imgur.com/GC6b6qe.jpg" data-src="https://i.imgur.com/GC6b6qe.jpg">Jaque Figueiredo</span>
+			<p>María, yo tampoco me lo creía, pero decidí arriesgarme y ahora, después ¡2 meses, ya he perdido más de 9 kg! Puedes comprar con los ojos cerrados, realmente funcionó</p> <span class="infos">Responder · Curtir · Seguir · 3 min </span> </div>
+      <!-- FIM DO COMENTARIO RESPOSTA -->
+    
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+        <noscript>
+          <img src="https://i.imgur.com/RVpxkuT.jpg">
+        </noscript>
+        <img class=" lazyloaded" src="https://i.imgur.com/RVpxkuT.jpg" data-src="https://i.imgur.com/RVpxkuT.jpg">Cristiane Souza</span>
+			<p>Había estado buscando una manera de perder peso de una manera simple y saludable por un tiempo y finalmente surgió la oportunidad que necesitaba, comprándolo ahora mismo!</p> <span class="infos">Responder · Curtir · Seguir · 2h </span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+    
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+          <noscript>
+            <img src="https://i.imgur.com/gOTadwt.jpg">
+          </noscript>
+          <img class=" lazyloaded" src="https://i.imgur.com/gOTadwt.jpg" data-src="https://i.imgur.com/gOTadwt.jpg">Julia Moraes</span>
+			<p>Para mí esta historia fue aburrida, pensé que no había un método que me hiciera perder peso todas las semanas, pero me equivoqué (gracias a Dios lol)</p> <span class="infos">Responder · Curtir · Seguir · 2h</span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+    
+      <!-- INICIO DO COMENTARIO || ESSE COMENTÁRIO EH UMA RESPOSTA -->
+		<div class="perfil perfil2"> <span class="nome">
+            <noscript>
+              <img src="https://i.imgur.com/qrr6krW.jpg">
+            </noscript>
+            <img class=" lazyloaded" src="https://i.imgur.com/qrr6krW.jpg" data-src="https://i.imgur.com/qrr6krW.jpg">
+            Janice Figueiredo</span>
+			<p>Funcionou mesmo para você? Estava afim de compra mas nao confiei muito...</p> <span class="infos">Responder · Curtir · Seguir · 3 min </span> </div>
+      <!-- FIM DO COMENTARIO RESPOSTA -->
+
+
+            <!-- INICIO DO COMENTARIO || ESSE COMENTÁRIO EH UMA RESPOSTA -->
+		<div class="perfil perfil2"> <span class="nome">
+            <noscript>
+              <img src="https://i.imgur.com/gOTadwt.jpg">
+            </noscript>
+            <img class=" lazyloaded" src="https://i.imgur.com/gOTadwt.jpg" data-src="https://i.imgur.com/gOTadwt.jpg">
+            Julia Moraes</span>
+			<p>Funcionou mesmo para você? Estava afim de compra mas nao confiei muito...</p> <span class="infos">Responder · Curtir · Seguir · 3 min </span> </div>
+      <!-- FIM DO COMENTARIO RESPOSTA -->
+		
+    
+      <!-- INICIO DO COMENTARIO -->
+		<div class="perfil"> <span class="nome">
+        <noscript>
+          <img src="https://i.imgur.com/Qxycjx9.jpg">
+        </noscript>
+        <img class=" lazyloaded" src="https://i.imgur.com/Qxycjx9.jpg" data-src="https://i.imgur.com/Qxycjx9.jpg">Claudia Melo</span>
+			<p>¡¡Mi vida es diferente ahora!!! Brigada 🙂</p> <span class="infos">Responder · Curtir · Seguir · 4h </span> </div>
+      <!-- FIM DO COMENTARIO -->
+		
+    		
+		
+
+
+      <!-- NÃO MEXA AQUI EM BAIXO -->
+	</div>
+</div>
+
+<div class="main-container ocultar">
+<div class="container1">
+  <div class="left-side left-side__content">
+    <h2>Tal vez eres inseguro...</h2>
+    <p>Por lo tanto, le ofreceremos <b>7 días de garantía incondicional</b><br><br>
+
+Independientemente del motivo, si el producto no tiene sentido para usted, pregúntenos y le reembolsaremos el <b>100 % de su inversión, sin hacer preguntas.</b><br><br>
+
+<b>¡El riesgo es todo nuestro!</b> Ahora es mucho más fácil tomar una decisión, <br>¿verdad?</b></p>
+<button onclick="window.location.href='https://pay.hotmart.com/V79549513H?checkoutMode=10&bid=1681004967679'">¡QUIERO APROVECHAR ESTA OPORTUNIDAD!</button>
+  </div>
+  <div class="right-side">
+    <img src="https://i.ibb.co/R69Rwch/as.png">
+    </div>
+  </div>
+</div>
+
+
+<div class="section1 ocultar">
+ <h1 class="section-title">Perguntas frequentes</h1>
+
+  <div class="accordion">
+    <button class="accordion__title">¿Cómo recibiré acceso?</button>
+    <div class="accordion__content">
+      <p>Una vez confirmado tu pago, recibirás instrucciones y datos de acceso directo en tu correo electrónico. Con esta información, podrá acceder a todos los contenidos de forma inmediata.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion__title">¿Puedo acceder a través del móvil?</button>
+    <div class="accordion__content">
+      <p>¡Sí! Nuestra plataforma está diseñada para funcionar perfectamente en celulares, tabletas y computadoras. Esto quiere decir que podrás estudiar todo el contenido perfectamente desde el dispositivo que prefieras, ya sea celular, tablet o computadora y desde donde quieras.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion__title">¿Cuáles son las formas de pago?</button>
+    <div class="accordion__content">
+      <p>Puede pagar con tarjeta de crédito y también es posible pagar con recibo bancario.</p>
+    </div>
+  </div>
+
+      <div class="accordion">
+    <button class="accordion__title">¿Qué pasa si no estoy satisfecho con el resultado?</button>
+    <div class="accordion__content">
+      <p>Nuestro método es probado y aprobado por cientos de personas en todo Brasil. Sin embargo, si decide que el programa no es para usted dentro de los 7 días, tiene derecho a un reembolso completo, sin preguntas.</p>
+    </div>
+  </div>
+  </div>
+
+<div class="rodape">
+  <h3>Copyright 2022 ® Todos los derechos reservados.</h3>
+  <p>Este sitio web no está afiliado a Facebook ni a ningún sitio web que haya navegado. Una vez que abandonas Facebook o sitios web, no es su responsabilidad, es de nuestro sitio web. Hacemos todo lo posible para indicar y mostrar claramente todas las pruebas de productos y utilizar resultados reales. No vendemos su dirección de correo electrónico ni ninguna información a terceros. Nunca hacemos ningún tipo de spam.</p>
+</div>
+
+<script>
+
+var tmin = 22;
+var tseg = 48;
+  
+var tpitch = (tmin * 60000) + (tseg * 1000);
+setTimeout('show()', tpitch);
+console.log('pitch em:', tpitch,'ms - totalizando',tmin,'min','e',tseg,'seg'); 
+function show(){
+var list = document.getElementsByClassName('ocultar');
+for (var i = 0; i < list.length; i++) {
+    list[i].style.visibility = 'visible';
+    list[i].style.display = 'block';
+    }
+}
+
+
+        const accordionTitles = document.querySelectorAll('.accordion__title');
+
+accordionTitles.forEach(title => {
+  title.addEventListener('click', () => {
+    title.classList.toggle('active');
+    const content = title.nextElementSibling;
+    content.classList.toggle('show');
+  });
+});
+</script>
+  </body>
+</html>
